@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Admission Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>New Admission Form</h2>
+        <form id="admissionForm" name="submit-to-google-sheet">
+            <div class="form-row row1">
+                <div class="form-group">
+                    <label for="jeecupRollNo">Jeecup Roll No.</label>
+                    <input type="text" id="jeecupRollNo" name="JeecupRollNo" required>
+                    <div id="jeecupRollNoError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="obtainedMark">Obtained Mark</label>
+                    <input type="number" id="obtainedMark" name="ObtainedMark" required>
+                    <div id="obtainedMarkError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="DOB" required>
+                    <div id="dobError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="Name" required>
+                    <div id="nameError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="fatherName">Father Name</label>
+                    <input type="text" id="fatherName" name="FatherName" required>
+                    <div id="fatherNameError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="rank">Rank</label>
+                    <input type="number" id="rank" name="Rank" required>
+                    <div id="rankError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="motherName">Mother Name</label>
+                    <input type="text" id="motherName" name="MotherName" required>
+                    <div id="motherNameError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="Category" required>
+                        <option value="">Select Category</option>
+                        <option value="General">General</option>
+                        <option value="OBC">OBC</option>
+                        <option value="SC">SC</option>
+                        <option value="ST">ST</option>
+                    </select>
+                    <div id="categoryError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="allotedCategory">Alloted Category</label>
+                    <select id="allotedCategory" name="AllotedCategory" required>
+                        <option value="">Select Alloted Category</option>
+                        <option value="Open">Open</option>
+                        <option value="Gen-EWS">Gen-EWS</option>
+                        <option value="SC">SC</option>
+                        <option value="ST">ST</option>
+                    </select>
+                    <div id="allotedCategoryError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="Gender" value="Male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="Gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div id="genderError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="aadharNumber">Aadhar Number</label>
+                    <input type="text" id="aadharNumber" name="AadharNumber" required>
+                    <div id="aadharNumberError" class="error"></div>
+                </div>
+            </div>
+            <div class="form-row row2">
+                <div class="form-group">
+                    <label for="caste">Caste</label>
+                    <input type="text" id="caste" name="Caste" required>
+                    <div id="casteError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="mobileNo">Mobile No.</label>
+                    <input type="tel" id="mobileNo" name="MobileNo" required>
+                    <div id="mobileNoError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="villPost">Vill+post</label>
+                    <input type="text" id="villPost" name="Vill+post" required>
+                    <div id="villPostError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="thana">Thana</label>
+                    <input type="text" id="thana" name="Thana" required>
+                    <div id="thanaError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="tahsil">Tahsil</label>
+                    <input type="text" id="tahsil" name="Tahsil" required>
+                    <div id="tahsilError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="district">District</label>
+                    <input type="text" id="district" name="District" required>
+                    <div id="districtError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="State" required>
+                    <div id="stateError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="pincode">Pincode</label>
+                    <input type="text" id="pincode" name="Pincode" required>
+                    <div id="pincodeError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="branch">Branch</label>
+                    <select id="branch" name="Branch" required>
+                        <option value="">Select Branch</option>
+                        <option value="Civil">Civil</option>
+                        <option value="Electrical">Electrical</option>
+                        <option value="Mechanical">Mechanical</option>
+                    </select>
+                    <div id="branchError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label>Group</label>
+                    <div class="radio-group">
+                        <input type="radio" id="groupA" name="Group" value="Group A" required>
+                        <label for="groupA">Group A</label>
+                        <input type="radio" id="groupK" name="Group" value="Group K">
+                        <label for="groupK">Group K</label>
+                    </div>
+                    <div id="groupError" class="error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" name="EmailID" required>
+                    <div id="emailError" class="error"></div>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
