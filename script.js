@@ -130,8 +130,8 @@ document.getElementById('admissionForm').addEventListener('submit', function(eve
     })
     .then(response => {
         if (response.ok) {
-            document.getElementById('message').textContent = 'Your data is submitted successfully!';
-            form.reset();
+            // Redirect to submit.html on successful submission
+            window.location.href = 'submit.html';
         } else {
             document.getElementById('message').textContent = 'Error submitting data.';
         }
